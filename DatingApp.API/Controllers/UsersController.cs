@@ -47,10 +47,7 @@ namespace DatingApp.API.Controllers
             return Ok(usersToReturn);
         }
 
-        private object IEnumerable<T>(IEnumerable<User> users)
-        {
-            throw new NotImplementedException();
-        }
+
 
         [HttpGet("{id}", Name="GetUser")]
         public async Task<IActionResult> GetUser(int id)
